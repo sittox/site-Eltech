@@ -129,3 +129,49 @@ td {
 tr:hover td, tr:hover th {
   background-color: #161616;
 }
+
+/*маленькие экраны*/
+@media (max-width: 768px) {
+
+  /*Шапка*/
+  header {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 16px 20px;
+    gap: 12px;
+    justify-items: center;
+  }
+
+  /*Навигация*/
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  /*Контент*/
+  main {
+    margin: 30px auto;
+    padding: 0 16px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  /*Таблица*/
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+}
