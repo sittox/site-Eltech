@@ -130,32 +130,32 @@ tr:hover td, tr:hover th {
   background-color: #161616;
 }
 
-/*маленькие экраны*/
 @media (max-width: 768px) {
 
-  /* Шапка — логотип сверху, nav снизу */
   header {
     grid-template-columns: 1fr;
     height: auto;
-    padding: 16px 20px;
-    gap: 12px;
+    padding: 12px 16px;
+    gap: 10px;
     justify-items: center;
   }
 
-  /* Навигация — ссылки переносятся */
+  .logo img {
+    height: 30px;
+  }
+
   nav {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 16px;
+    gap: 8px 16px;
   }
 
   nav a {
-    font-size: 14px;
+    font-size: 13px;
   }
 
-  /* Контент — меньше отступы */
   main {
-    margin: 30px auto;
+    margin: 24px auto;
     padding: 0 16px;
   }
 
@@ -167,11 +167,14 @@ tr:hover td, tr:hover th {
     font-size: 1.1rem;
   }
 
-  /* Таблица — горизонтальный скролл */
   table {
     display: block;
     overflow-x: auto;
-    white-space: nowrap;
+  }
+
+  th, td {
+    white-space: normal;
+    min-width: 100px;
   }
 
 }
