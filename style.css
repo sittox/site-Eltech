@@ -27,7 +27,7 @@ header {
   z-index: 100;
 }
 
-.logo svg {
+.logo img {
   height: 40px;
 }
 
@@ -131,9 +131,13 @@ tr:hover td, tr:hover th {
 }
 
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
 
   header {
     grid-template-columns: 1fr;
+    width: 100%;
     height: auto;
     padding: 12px 16px;
     gap: 10px;
@@ -145,6 +149,7 @@ tr:hover td, tr:hover th {
   }
 
   nav {
+    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
     gap: 8px 16px;
@@ -159,13 +164,8 @@ tr:hover td, tr:hover th {
     padding: 0 16px;
   }
 
-  h1 {
-    font-size: 1.6rem;
-  }
-
-  h2 {
-    font-size: 1.1rem;
-  }
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.1rem; }
 
   table {
     display: block;
@@ -176,5 +176,4 @@ tr:hover td, tr:hover th {
     white-space: normal;
     min-width: 100px;
   }
-
 }
