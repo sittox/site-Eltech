@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eltech - AI Assistant for Studying</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="logo.svg" alt="Eltech">
+        </a>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="about.html">О проекте</a>
+            <a href="members.html">Участники</a>
+            <a href="journal.html">Журнал</a>
+            <a href="resources.html">Ресурсы</a>
+            <a href="chatBot.html" class="active">AI Бот</a>
+        </nav>
+    </header>
+    <main>
+        <h1>AI Assistant for Studying</h1>
+        <p>
+            Чат-бот для ВКонтакте на основе GigaChat, созданный в рамках проектной практики.
+            Бот помогает студентам разбираться в сложных темах, объясняет материал
+            простым языком и отвечает на учебные вопросы.
+        </p>
+
+        <img src="images/screenshot4.png" alt="AI Assistant for Studying ВКонтакте" style="width: 100%; max-width: 700px; border-radius: 12px; margin: 16px 0;">
+
+        <h2>Возможности бота</h2>
+        <ul>
+            <li>Объясняет сложные темы простым языком с примерами из жизни</li>
+            <li>Помогает разобраться с учебными задачами</li>
+            <li>Отвечает на вопросы по любым учебным предметам</li>
+            <li>Обращается к пользователю по имени</li>
+            <li>Поддерживает команды /start и /help</li>
+        </ul>
+
+        <h2>Стек технологий</h2>
+        <ul>
+            <li>Python 3.14</li>
+            <li>vkbottle — библиотека для работы с VK API</li>
+            <li>GigaChat API — языковая модель от Сбера</li>
+            <li>python-dotenv — безопасное хранение токенов</li>
+        </ul>
+
+        <h2>Архитектура</h2>
+        <p>
+            Бот работает через Long Poll API ВКонтакте: получает сообщения пользователей,
+            формирует промпт с системным контекстом и отправляет его в GigaChat.
+            Полученный ответ очищается от Markdown-разметки и возвращается пользователю.
+        </p>
+        <img src="images/architecture.png" alt="Схема архитектуры" style="width: 100%; max-width: 700px; border-radius: 12px; margin: 16px 0;">
+
+        <h2>Примеры работы</h2>
+        <img src="images/screenshot1.png" alt="Приветствие бота" style="width: 100%; max-width: 400px; border-radius: 12px; margin: 16px 0;">
+        <img src="images/screenshot2.png" alt="Ответ на вопрос" style="width: 100%; max-width: 400px; border-radius: 12px; margin: 16px 0;">
+
+        <h2>Группа ВКонтакте</h2>
+        <ul>
+            <li><a href="https://vk.com/studhelpbot">AI Assistant for Studying</a></li>
+        </ul>
+    </main>
+</body>
+</html>
